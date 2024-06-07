@@ -1,0 +1,80 @@
+@import url(https://db.onlinewebfonts.com/c/dd97c93d1184d223b93c9042b7e57980?family=Stratos+Web);
+
+:root {
+    --green: #53FFAB;
+    --grey: #D9D9D9;
+    --dark-blue: #202632;
+    --blue: #313A49;
+    --container-width: 400px;
+    --mobile-container-width: 250px;
+}
+
+body {
+    background: var(--dark-blue);
+    font-family: "Stratos Web";
+}
+
+.advice-container {
+    width: var(--container-width);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: var(--blue);
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.advice-number {
+    color: var(--green);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.advice-content {
+    color: var(--grey);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+}
+.limiter {
+    margin-top: 20px;
+}
+
+hr {
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 25px;
+}
+
+.quote {
+    color: var(--grey);
+    font-size: 40px;
+}
+
+.dice-container {
+    background-color: var(--green);
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 28px;
+    height: 28px;
+}
+
+.advice-content, hr {
+    color: var(--grey);
+}
