@@ -5,8 +5,11 @@
     <title>Advice Slip</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/book.png">
+    <script src="./libraries/voicerss-tts.min.js"></script>
   </head>
   <body>
+    <div class="wrapper">
       <div class="advice-container">
         <p class="advice-number">Advice #<span id="adivceId">1</span></p>
         <q class="advice-content">
@@ -18,9 +21,15 @@
           <hr>
         </div>
       </div>
-      <div class="dice-container">
-        <img src="./images/dice.svg" alt="dice">
+      <div class="buttons-wrapper">
+        <div id="loadAdvice" class="btn-container btn-position">
+          <img src="./images/dice.svg" alt="dice">
+        </div>
+        <div id="tellAdvice" class="btn-container btn-position">
+          <img src="./images/speaker.png" alt="speaker">
+        </div>
       </div>
-      <script src="./assets/script.js" type="text/javascript"></script>
+    </div>
+    <script src="./assets/script.js" type="text/javascript"></script>
   </body>
 </html>

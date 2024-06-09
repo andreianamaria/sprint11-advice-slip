@@ -5,8 +5,6 @@
     --grey: #D9D9D9;
     --dark-blue: #202632;
     --blue: #313A49;
-    --container-width: 400px;
-    --mobile-container-width: 250px;
 }
 
 body {
@@ -14,15 +12,18 @@ body {
     font-family: "Stratos Web";
 }
 
+.wrapper {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .advice-container {
-    width: var(--container-width);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    width: 300px;
     background-color: var(--blue);
-    padding: 40px;
+    padding: 2rem;
     border-radius: 5px;
     text-align: center;
 }
@@ -30,49 +31,50 @@ body {
 .advice-number {
     color: var(--green);
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 1.5rem;
 }
 
 .advice-content {
     color: var(--grey);
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 38px;
+    line-height: 1.75rem;
 }
 .limiter {
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 
 hr {
     display: inline-block;
     width: 45%;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
 .quote {
     color: var(--grey);
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
-.dice-container {
+.buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: -30px;
+    gap: 1rem;
+}
+
+.btn-container {
     background-color: var(--green);
     width: fit-content;
     height: fit-content;
-    padding: 15px;
+    padding: 1rem;
     border-radius: 50%;
-    margin: auto;
-    position: absolute;
-    left: 50%;
-    top: 78%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
 img {
-    width: 28px;
-    height: 28px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .advice-content, hr {
