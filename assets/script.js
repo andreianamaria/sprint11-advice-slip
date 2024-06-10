@@ -1,10 +1,10 @@
 const adviceAPIUrl = 'https://api.adviceslip.com/advice';
-const adviceId = document.querySelector('#adivceId');
-const adviceContent = document.querySelector('.advice-content');
+const adviceIdElement = document.querySelector('#adivceId');
+const adviceContentElement = document.querySelector('.advice-content');
 
 const initElem = (data) => {
-  adviceId.textContent = data.slip.id;
-  adviceContent.textContent = data.slip.advice;
+  adviceIdElement.textContent = data.slip.id;
+  adviceContentElement.textContent = data.slip.advice;
 }
 
 const speak = (message) => {
@@ -37,10 +37,10 @@ const renderAdvice = () => {
 }
 
 const tellAdvice = () => {
-  speak(`Advice number ${adviceId.textContent} .... ${adviceContent.textContent}`);
+  speak(`Advice number ${adviceIdElement.textContent} .... ${adviceContentElement.textContent}`);
 }
 
-const dice = document.querySelector('#loadAdvice');
-const voice = document.querySelector('#tellAdvice');
-dice.addEventListener('click', renderAdvice);
-voice.addEventListener('click', tellAdvice);
+const diceElement = document.querySelector('#loadAdvice');
+const voiceElement = document.querySelector('#tellAdvice');
+diceElement.addEventListener('click', renderAdvice);
+voiceElement.addEventListener('click', tellAdvice);
